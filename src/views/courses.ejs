@@ -1,0 +1,36 @@
+<%- include('head') %>
+
+    <body>
+
+        <!-- ==============================NAVBAR============================ -->
+
+    <%- include('navbar') %>
+
+        <!-- ==============================COURSES-BOX============================ -->
+
+        <div class="container mt-4">
+            <div class="row">
+                
+                <% courses.forEach((course)=>{ %>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="course_title">
+                                <h4><%- course.title %></h4>
+                            </div>
+                            <div class="course_about">
+                                <p><%- course.about %></p>
+                            </div>
+      <a href="/knowMore"><%- course.btn %></a>
+
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+
+
+      <%- include('script') %>
+
+    </body>
+
+    </html>

@@ -1,0 +1,72 @@
+<%- include('head') %>
+
+    <body class="bg-light">
+
+        <!-- ==============================NAVBAR============================ -->
+
+        <%- include('navbar') %>
+
+            <!-- ==============================FORM-PAGE============================ -->
+
+            <div class="container mt-5">
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="form_heading">
+                            <h2>Registration Form</h2>
+                        </div>
+                    </div>
+
+                    <form class="mt-4">
+                        <div class="box d-flex">
+                            <div class="col-lg-6">
+                                <div class="input_box">
+                                    <label for="name">Candidate Name</label> <br>
+                                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="input_box">
+                                    <label for="name">Mobile</label> <br>
+                                    <input type="number" name="number id=" number" placeholder="Enter your mobile">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box d-flex mt-4">
+                            <div class="col-lg-6">
+                                <div class="input_box">
+                                    <label for="name">Email</label> <br>
+                                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="input_box">
+                                    <label for="name">Course Name</label> <br>
+                                    <input type="text" name="course" id="course" placeholder="Enter your course name">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 offset-5">
+                            <button type="submit" class="btn btn-primary w-50 mt-5">
+                                <a href="<%-  %>">Find Course</a>
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+
+            
+
+
+
+            <%- include('script') %>
+
+    </body>
+
+    </html>
