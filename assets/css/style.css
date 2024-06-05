@@ -233,7 +233,7 @@ p {
 
 /* =======================================UNIVERSITIES==================================== */
 
-.heading h2{
+.heading h2 {
   color: #fff;
   font-size: 45px;
   text-align: center;
@@ -249,9 +249,9 @@ p {
   text-decoration: none;
 }
 
-.partners_card .partner_item{
+.partners_card .partner_item {
   background-color: #fff;
-  border: 1px solid #5555556a;   
+  border: 1px solid #5555556a;
   padding: 10px;
   text-align: center;
   border-radius: 5px;
@@ -264,6 +264,11 @@ p {
   padding-top: 5px;
   color: #161C2D;
   font-weight: 700;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: uppercase; */
+  padding-top: 10px;
 }
 
 .partners_card span {
@@ -271,25 +276,41 @@ p {
   color: #161C2D;
   opacity: 65%;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* text-transform: uppercase; */
+  padding-top: 10px;
 }
+
+/* .partners_card .partner_content h6,
+.partners_card .partner_content span{
+    font-size: 13px;
+    color: #777;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+    padding-top: 10px;
+} */
 
 /* =============================MODAL=========================================== */
 
-.modal-title{
+.modal-title {
   text-align: center;
 }
 
-.modal-body{
+.modal-body {
   text-align: start;
 }
 
-.modal-body form .input_box label{
+.modal-body form .input_box label {
   color: #161C2D;
   font-size: 13px;
   /* font-weight: 400; */
 }
 
-form input{
+form input {
   width: 100%;
   height: 40px;
   border-radius: 7px;
@@ -299,18 +320,18 @@ form input{
 
 /* =============================FORM-PAGE=========================================== */
 
-.form_heading h2{
+.form_heading h2 {
   color: #161C2D;
   font-size: 45px;
 }
 
-form .input_box label{
+form .input_box label {
   color: #161C2D;
   font-size: 20px;
   font-weight: 500;
 }
 
-form input{
+form input {
   width: 90%;
   height: 40px;
   border-radius: 7px;
@@ -318,16 +339,16 @@ form input{
   padding: 0 10px;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
 input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button{
+input::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
-form a{
+form a {
   text-decoration: none;
   color: #fff;
 }

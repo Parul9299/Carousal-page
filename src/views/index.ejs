@@ -49,8 +49,7 @@
           <% universities.forEach((university, index)=>{ %>
             <div class="col-lg-2 mb-3">
               <div class="partners_card">
-                <a target="_blank" class="unibtn" data-bs-toggle="modal" data-bs-target="#uniModal<%- index %>"
-                  href="#">
+                <a target="_blank" class="unibtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">
                   <div class="p-3 card partner_item">
                     <img title="university" width="186" height="auto" loading="lazy" class="img-fluid"
                       src="images/<%- university.img %>.png" alt="universityimage">
@@ -62,22 +61,66 @@
                 </a>
               </div>
             </div>
-          <% }) %>
+            <% }) %>
 
         </div>
 
         <!-- ============================================MODAL=========================================== -->
 
-        
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Registration Form</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form class="p-3">
+                  <div class="col-lg-12 mb-2">
+                    <div class="input_box">
+                      <label for="name">Candidate Name</label> <br>
+                      <input type="text" name="name" id="name" placeholder="Enter your name">
+                    </div>
+                  </div>
 
+                  <div class="col-lg-12 mb-2">
+                    <div class="input_box">
+                      <label for="name">Mobile</label> <br>
+                      <input type="number" name="number id=" number" placeholder="Enter your mobile">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 mb-2">
+                    <div class="input_box">
+                      <label for="name">Email</label> <br>
+                      <input type="email" name="email" id="email" placeholder="Enter your email">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 mb-2">
+                    <div class="input_box">
+                      <label for="name">Course Name</label> <br>
+                      <input type="text" name="course" id="course" placeholder="Enter your course name">
+                    </div>
+                  </div>
+
+                  <!-- <div class="col-lg-4 offset-5">
+                    <button type="submit" class="btn btn-primary w-75 mt-5">
+                      <a href="<%-  %>">Find Course</a>
+                    </button>
+                  </div> -->
+                </form>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary">Find Course</button>
               </div>
             </div>
           </div>
         </div>
+
+
       </div>
 
 
